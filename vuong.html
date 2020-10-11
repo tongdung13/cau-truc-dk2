@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vuong</title>
+</head>
+<body>
+<h1>Area Square</h1>
+<form>
+    <input id="a" type="text">
+    <button type="button" onclick="acreage()">acreage</button>
+</form>
+<p id="kq"></p>
+<script>
+    function acreage(){
+    let a = document.getElementById("a").value;
+    let b = a*a;
+    document.getElementById("kq").innerHTML ="acreage:" +b;
+    }
+</script>
+</body>
+</html>

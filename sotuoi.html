@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so tuoi 1 nguoi</title>
+</head>
+<body>
+<h1>The Age Of a Person.</h1>
+<form>
+    <input id="a" type="text">
+    <button type="button" onclick="yearold()">Year old</button>
+</form>
+<p id="kq"></p>
+<script>
+    function yearold(){
+        let a = document.getElementById("a").value;
+        if (a>0 && a< 120){
+            document.getElementById("kq").innerHTML="Year old:" +a;
+        }else {
+            document.getElementById("kq").innerHTML="Year old:" + "NO";
+        }
+    }
+</script>
+</body>
+</html>

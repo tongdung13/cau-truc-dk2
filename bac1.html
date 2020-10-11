@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ptbac1</title>
+</head>
+<body>
+<h1>First Order Equation</h1>
+<form>
+    <input id="a" type="text">
+    <input id="b" type="text">
+    <button type="button" onclick="result()">Result</button>
+</form>
+<p id="kq"></p>
+<script>
+    function result(){
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = -b/a;
+        if (a != 0){
+            document.getElementById("kq").innerHTML= "result:"+c;
+        }else if (a==0 && b==0){
+            document.getElementById("kq").innerHTML="vo so ngiem"
+        }else if (b!=0){
+            document.getElementById("kq").innerHTML="vo nghem"
+        }
+    }
+</script>
+</body>
+</html>

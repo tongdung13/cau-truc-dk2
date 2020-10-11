@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ptrinh bac2</title>
+</head>
+<body>
+<h1>Quadratic Equation</h1>
+<form>
+  a =  <input id="a" type="text"><br>
+  b =  <input id="b" type="text"><br>
+  c =  <input id="c" type="text"><br>
+    <button type="button" onclick="result()">Result</button>
+</form>
+<p id="kq"></p>
+<script>debugger
+    function result(){
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        let d = b*b-4*a*c;
+        document.getElementById("kq")
+         if (d<0){
+            document.getElementById("kq").innerHTML="Vo nghiem";
+        }else if ( d === 0 ){
+            let x1 = -b/(2*a);
+            let x2 = -b/(2*a);
+            document.getElementById("kq").innerHTML="Result:" +x1 + x2 ;
+        }else if (d>0){
+             let x1 = (-b- Math.sqrt(d))/(2*a);
+             let x2 = (-b+ Math.sqrt(d))/(2*a);
+            document.getElementById("kq").innerHTML="Result:" + x1 + x2;
+        }
+    }console.log()
+</script>
+</body>
+</html>

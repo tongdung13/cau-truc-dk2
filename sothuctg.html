@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so thuc tam giac</title>
+</head>
+<body>
+<h1>Check triangle edge</h1>
+<form>
+    <input id="a" type="text">
+    <input id="b" type="text">
+    <input id="c" type="text">
+    <button type="button" onclick="check()">Check</button>
+</form>
+<p id="kq"></p>
+<script>debugger
+    function check(){
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        if (a >0){
+            if (b>0){
+                if (c>0){
+                    if ((a+b)>c){
+                        if ((a+c)>b){
+                            if ((b+c)>a){
+                                document.getElementById("kq").innerHTML="Check:" + "is the triangle edge";
+                        }else {
+                                document.getElementById("kq").innerHTML="Check:" + "not triangle side";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }console.log()
+</script>
+</body>
+</html>

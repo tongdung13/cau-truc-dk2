@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tamgiacvuong</title>
+</head>
+<body>
+<h1>The area of a right triangle</h1>
+<form>
+    <input id="a" type="text">
+    <input id="b" type="text">
+    <button type="button" onclick="acreage()">Acreage</button>
+</form>
+<p id="kq"></p>
+<script>
+    function acreage(){
+    let a = document.getElementById("a").value;
+    let b = document.getElementById("b").value;
+    let c = (a*b)/2;
+    document.getElementById("kq").innerHTML="Acreage:" + c;
+    }
+</script>
+</body>
+</html>
