@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    tong so ten vay:<br/>
+    <input id="a" type="text"/><br/>
+    lai suat nam:<br/>
+    <input id="b" type="text"><br/>
+    so thang vay:<br/>
+    <input id="c" type="text">
+    <button type="button" onclick="check()">Check</button>
+</form>
+<p id="kq"></p>
+<script>
+    function check() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+        let d = a*(b/c);
+        document.getElementById("kq").innerHTML = "Result: " + d;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Personal income tax.</h1>
+<input id="a" type="text">
+<button type="button" onclick="result()">Result</button>
+<p id="kq"></p>
+<script>
+    function result(){
+        let a = document.getElementById("a").value;
+        if (a>30000000){
+            let b = (a*30)/100;
+            document.getElementById("kq").innerHTML="Result:" +b;
+        }else if (a>=20000000){
+            let c = (a*20)/100;
+            document.getElementById("kq").innerHTML="Result:" +c;
+        }else{
+            let d = (a*10)/100;
+            document.getElementById("kq").innerHTML="Result" +d;
+        }
+    }
+
+</script>
+</body>
+</html>

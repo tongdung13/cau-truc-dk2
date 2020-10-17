@@ -7,12 +7,13 @@
 <body>
 <h1>Quadratic Equation</h1>
 <form>
-  a =  <input id="a" type="text"><br>
-  b =  <input id="b" type="text"><br>
-  c =  <input id="c" type="text"><br>
+  a =  <input id="a" type="text"><br><br>
+  b =  <input id="b" type="text"><br><br>
+  c =  <input id="c" type="text"><br><br>
     <button type="button" onclick="result()">Result</button>
 </form>
 <p id="kq"></p>
+<p id="k"></p>
 <script>debugger
     function result(){
         let a = document.getElementById("a").value;
@@ -25,11 +26,13 @@
         }else if ( d === 0 ){
             let x1 = -b/(2*a);
             let x2 = -b/(2*a);
-            document.getElementById("kq").innerHTML="Result:" +x1 + x2 ;
+            document.getElementById("kq").innerHTML="Result:" +x1;
+            document.getElementById("k").innerHTML="Result" +x2;
         }else if (d>0){
-             let x1 = (-b- Math.sqrt(d))/(2*a);
-             let x2 = (-b+ Math.sqrt(d))/(2*a);
-            document.getElementById("kq").innerHTML="Result:" + x1 + x2;
+             let x1 = (-b+ Math.sqrt(d))/(2*a);
+             let x2 = (-b- Math.sqrt(d))/(2*a);
+            document.getElementById("kq").innerHTML="Result:" + x1;
+            document.getElementById("k").innerHTML="Result" + x2;
         }
     }console.log()
 </script>
